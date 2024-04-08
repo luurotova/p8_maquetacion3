@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación 3</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .squares {
+            max-width: 100%;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .squares-top, .squares-bottom {
+            display: inline-flex;
+        }
+
+        .squares-top_normal--red {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 10px;
+        }
+
+        .squares-top_rounded--yellow {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .squares-top_normal--green {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            margin: 10px;
+        }
+
+        .squares-top_rounded--light-blue {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .squares-bottom_rounded--dark-blue {
+            width: 150px;
+            height: 150px;
+            background-color: darkblue;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .squares-bottom_normal--violet {
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+            margin: 10px;
+        }
+
+        .squares-bottom_rounded--pink {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .squares-bottom_normal--black {
+            width: 150px;
+            height: 150px;
+            background-color: darkgrey;
+            margin: 10px;
+            position: relative;
+        }
+
+        .squares-top_normal--red--yellow-square {
+            width: 25%;
+            height: 25%;
+            background-color: yellow;
+            margin: 10px;
+        }
+
+        .squares-top_normal--green--yellow-square {
+            width: 25%;
+            height: 25%;
+            background-color: yellow;
+            border-radius: 20%;
+            margin: 10px;
+        }
+
+        .squares-bottom_normal--black--yellow-square {
+            width: 25%;
+            height: 25%;
+            background-color: yellow;
+            border-radius: 20%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <div class="squares">
+        <div class="squares-top">
+            <div class="squares-top_normal squares-top_normal--red">
+                <div class="squares-top_normal--red--yellow-square"></div>
+            </div>
+            <div class="squares-top_rounded squares-top_rounded--yellow "></div>
+            <div class="squares-top_normal squares-top_normal--green">
+                <div class="squares-top_normal--green--yellow-square"></div>
+            </div>
+            <div class="squares-top_rounded squares-top_rounded--light-blue "></div>
+        </div>
+        <div class="squares-bottom">
+            <div class="squares-top_normal squares-bottom_rounded--dark-blue "></div>
+            <div class="squares-top_rounded squares-bottom_normal--violet "></div>
+            <div class="squares-top_normal squares-bottom_rounded--pink "></div>
+            <div class="squares-top_rounded squares-bottom_normal--black">
+                <div class="squares-bottom_normal--black--yellow-square"></div>
+            </div>
+        </div>
+
+</body>
+
+</html>
